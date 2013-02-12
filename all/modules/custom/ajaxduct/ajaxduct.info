@@ -1,0 +1,6 @@
+; $Id$
+name = AJAX Duct Work 
+description = "Examples of using AJAX, JavaScript, jQuery and Drupal's JavaScript libraries."
+package = AJAX and jQuery Exposed
+core = 7.x
+scripts[] = ajaxduct.js

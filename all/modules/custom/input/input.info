@@ -1,0 +1,6 @@
+; $Id$
+name = Form Input
+description = Example module to demonstrate the Form API.
+package = AJAX and jQuery Exposed
+core = 7.x
+files[] = input.module

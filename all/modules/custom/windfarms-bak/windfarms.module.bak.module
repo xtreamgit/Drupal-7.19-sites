@@ -1,0 +1,66 @@
+<?php 
+/**
+ *  @file
+ *  Custom functionality for a Wind Farm Database.
+ */
+
+
+/**
+ * Implements hook_help().
+ */
+
+function windfarms_help($path, $arg) {
+	switch ($path) {
+		case 'admin/help#windfarms': {
+			$ret_val = '<h3>' . t('About') . '</h3>';
+			$ret_val = '<p>' . t('The Wind Farm module makes it easy to manage the wind farms database') . '</p>';
+			return $ret_val;
+			break;			
+		}
+	}	
+}
+
+
+/**
+ * Implements hook_menu().
+ */
+function delicious_menu() {
+	$items = array();
+	// Admin configuration group.
+	$items['admin/config/delicious'] = array(
+		'title' => 'Delicious Wind Farms',
+		'description' => 'Administer Delicious Wind Farms',
+		'access arguments' => array('administer delicious wind farms'),			
+	);
+	
+	// Admin configuration - Settings.
+	$items['admin/config/windfarms/manage'] = array(
+	'title' => 'Delicious Wind Frams settings',
+	'description' => 'Manage Delicious Wind Farm settings and configuration.',
+	'page callback' => 'drupal_get_form',
+	'page arguments' => array('delicious_admin_settings_form'),		
+	);
+	return $items;
+}
+
+
+
+/**
+ * Implements hook_menu
+ */
+
+
+/**
+ * Implements hook_form().
+ */
+function delicious_form($node, &$form_state) {
+	$form['foo'] = array(
+			'#type' => 'textfield',
+			'#title' => t('bar'),
+			'#default_value' => t('foo'),
+			'#size' => 60,
+			'#maxlength' => 64,
+			'#description' => t('baz'),
+	);
+return $form;	
+}

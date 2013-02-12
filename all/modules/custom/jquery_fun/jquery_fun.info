@@ -1,0 +1,6 @@
+; $Id$
+name = jQuery Fun Module
+description = "Examples of using jQuery and Drupal's JavaScript libraries. Inspired by the "The Definite Drupal 7" book.
+package = AJAX and jQuery Exposed
+core = 7.x
+scripts[] = jquery_fun.js

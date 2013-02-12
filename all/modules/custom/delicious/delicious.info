@@ -1,0 +1,5 @@
+name = delicious
+description = Tests the hook_form_alter usability.
+package = Custom
+version = VERSION
+core = 7.x

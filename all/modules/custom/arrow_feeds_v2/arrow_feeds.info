@@ -1,0 +1,6 @@
+; $Id$
+name = Arrow Feeds 
+description = "Drupal & AJAX based implementation of Arrow's Creation Center Feeds."
+package = Arrow Custom Modules
+core = 7.x
+scripts[] = arrow_feeds.js

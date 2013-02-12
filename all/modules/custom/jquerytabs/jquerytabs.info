@@ -1,0 +1,8 @@
+; $Id$
+name = jQuery Drupal Tabs
+description = "Examples of using AJAX, JavaScript, jQuery and Drupal's JavaScript libraries."
+package = AJAX and jQuery Exposed
+core = 7.x
+stylesheets[screen][] = jquery-ui.css
+scripts[] = jquerytabs.js
+

@@ -1,0 +1,18 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Demonstrates how to work with JavaScript and jQuery in Drupal.
+ */
+
+/**
+ * Implements hook_init.
+ */
+
+function jquery_fun_init() {
+drupal_add_library('system', 'ui.accordion');
+drupal_add_library('system', 'ui.datepicker');
+// Don't use tabs. It doesn't seem to be working.
+//drupal_add_library('system', 'ui.tabs');
+}

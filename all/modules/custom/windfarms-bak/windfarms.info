@@ -1,0 +1,5 @@
+name = Wind Farms
+description = Wind Farms database.
+package = Custom
+version = VERSION
+core = 7.x
